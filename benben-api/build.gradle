@@ -1,0 +1,13 @@
+jar.baseName = "benben-api"
+
+dependencies {
+    compile project(':benben-service')
+    
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "org.springframework.boot:spring-boot-starter-web"
+
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+    testCompile "org.hibernate:hibernate-validator"
+    testCompile "junit:junit:4.12"
+    testCompile "org.mockito:mockito-core"
+}

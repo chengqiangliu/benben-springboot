@@ -1,0 +1,45 @@
+server:
+  port: 8082
+
+spring:
+  freemarker:
+    check-template-location: false
+  rabbitmq:
+    # comma-separated
+    addresses: localhost:5672
+    username: "guest"
+    password: "guest"
+  mail:
+    default-encoding: "UTF-8"
+    host: "smtp.gmail.com"
+    port: 587
+    username: "liuchengqiang007@gmail.com"
+    password: "16897766Aq"
+    protocol: smtp
+    test-connection: false
+    send-from: "liuchengqiang007@gmail.com"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+workers:
+  send-email-worker:
+    enable: true
+    queue:
+      name: "send-email-queue"
+    poison:
+      queue:
+        name: "send-email-queue-poison"
+    pool:
+      size: 5
+      max: 10
+    retry:
+      backOff:
+        initial: 10
+        max: 1000
+        multiplier: 2.0
+      max: 5

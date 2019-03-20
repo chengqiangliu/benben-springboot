@@ -1,0 +1,9 @@
+jar.baseName = "benben-client"
+
+dependencies {
+    compile project(':benben-common')
+
+    compile "org.apache.httpcomponents:httpclient:4.5.6"
+    compile "org.apache.httpcomponents:httpcore:4.4.10"
+    compile "org.json:json:20180813"
+}

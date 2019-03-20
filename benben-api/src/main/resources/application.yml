@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/benben_db
+    username: root
+    password:
+    validationQuery: "SELECT 1"
+    timeBetweenEvictionRunsMillis: 300000
+  rabbitmq:
+    publisher-confirms: true
+
+event:
+  publisher:
+    exchange: "amq.topic"

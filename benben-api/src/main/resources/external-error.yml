@@ -1,0 +1,36 @@
+N10001:
+  message: "HttpMediaType is not supported"
+  httpStatus: 400
+N10002:
+  message: "Request method type is not supported"
+  httpStatus: 400
+N10003:
+  message: "{replacement} is not found"
+  httpStatus: 404
+N10004:
+  message: "The parameter {replacement} is empty"
+  httpStatus: 400
+N10005:
+  message: "The parameter {replacement} has invalid value"
+  httpStatus: 400
+N10006:
+  message: "The {replacement} already exists"
+  httpStatus: 500
+N10007:
+  message: "There is no {replacement} exists"
+  httpStatus: 500
+N10008:
+  message: "The group can not be deleted, because it has users in it"
+  httpStatus: 500
+N10009:
+  message: "The old password is not correct"
+  httpStatus: 500
+N10010:
+  message: "The {replacement} was updated by others"
+  httpStatus: 500
+N99998:
+  message: "Configuration error"
+  httpStatus: 500
+N99999:
+  message: "System error"
+  httpStatus: 500
