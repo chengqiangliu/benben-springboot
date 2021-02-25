@@ -1,0 +1,12 @@
+jar.baseName = "benben-workers"
+
+dependencies {
+    compile project(':benben-common')
+    compile project(':benben-rabbitmq')
+
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-mail"
+    compile "org.springframework.boot:spring-boot-starter-freemarker"
+    compile "org.springframework.amqp:spring-rabbit"
+}

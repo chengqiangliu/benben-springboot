@@ -1,0 +1,11 @@
+jar.baseName = "benben-service"
+
+dependencies {
+    compile project(':benben-dao')
+    compile project(':benben-rabbitmq')
+
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+    testCompile "org.hibernate:hibernate-validator"
+    testCompile "junit:junit:4.12"
+    testCompile "org.mockito:mockito-core"
+}

@@ -1,0 +1,50 @@
+buildscript {
+    ext {
+        dependencyManagementPluginVersion = "1.0.6.RELEASE"
+        springBootVersion = "1.5.17.RELEASE"
+    }
+
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+        classpath "io.spring.gradle:dependency-management-plugin:${dependencyManagementPluginVersion}"
+    }
+}
+
+subprojects {
+    apply plugin: "java"
+    apply plugin: "eclipse"
+    apply plugin: "idea"
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'org.springframework.boot'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    dependencies {
+        compile "org.springframework:spring-context"
+        compile "org.apache.commons:commons-lang3:3.4"
+        compileOnly "org.projectlombok:lombok"
+    }
+}
+
+allprojects {
+    group = 'com.benben'
+    version = "0.0.1-SNAPSHOT"
+
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+

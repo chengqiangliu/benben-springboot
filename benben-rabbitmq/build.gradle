@@ -1,0 +1,7 @@
+jar.baseName = "benben-rabbitmq"
+
+dependencies {
+    compile project(':benben-common')
+    
+    compile "org.springframework.amqp:spring-rabbit"
+}

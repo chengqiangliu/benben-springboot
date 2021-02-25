@@ -1,0 +1,61 @@
+EA9001:
+  externalErrorCode: N10001
+EA9002:
+  externalErrorCode: N10002
+EA9003:
+  externalErrorCode: N10003
+  replacement: "The endpoint"
+EA9998:
+  externalErrorCode: N99999
+EA9999:
+  externalErrorCode: N99999
+EA8001:
+  externalErrorCode: N99998
+EA8002:
+  externalErrorCode: N99998
+EA8003:
+  externalErrorCode: N99998
+EA8004:
+  externalErrorCode: N99998
+EA8005:
+  externalErrorCode: N99998
+EA8006:
+  externalErrorCode: N99998
+EA8007:
+  externalErrorCode: N99998
+WS0001:
+  externalErrorCode: N10003
+  replacement: "Group"
+WS0002:
+  externalErrorCode: N10006
+  replacement: "Group"
+WS0003:
+  externalErrorCode: N10007
+  replacement: "Group"
+WS0004:
+  externalErrorCode: N10008
+WS0005:
+  externalErrorCode: N10003
+  replacement: "User"
+WS0006:
+  externalErrorCode: N10009
+WS0007:
+  externalErrorCode: N10010
+  replacement: "User"
+WS0008:
+  externalErrorCode: N10006
+  replacement: "username"
+WS0009:
+  externalErrorCode: N10006
+  replacement: "bankcard"
+WS0010:
+  externalErrorCode: N10003
+  replacement: "bankcard"
+WS0011:
+  externalErrorCode: N10006
+  replacement: "cash"
+WS0012:
+  externalErrorCode: N10003
+  replacement: "cash"
+Default:
+  externalErrorCode: N99999

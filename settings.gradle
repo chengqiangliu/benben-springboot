@@ -1,0 +1,12 @@
+rootProject.name = 'benben-all-project'
+
+include 'benben-api'
+include 'benben-service'
+include 'benben-dao'
+include 'benben-batch'
+include 'benben-common'
+include 'benben-workers'
+include 'benben-rabbitmq'
+include 'benben-test-common'
+include 'benben-client'
+

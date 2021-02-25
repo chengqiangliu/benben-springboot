@@ -1,0 +1,15 @@
+jar.baseName = "benben-dao"
+
+dependencies {
+    compile project(':benben-common')
+    compile project(':benben-test-common')
+
+    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+    compile "mysql:mysql-connector-java"
+
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+    testCompile "org.hibernate:hibernate-validator"
+    testCompile "com.h2database:h2"
+    testCompile 'junit:junit:4.12'
+    testCompile "org.mockito:mockito-core"
+}
